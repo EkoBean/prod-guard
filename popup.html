@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>Prod Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>正式環境網域</h1>
+
+  <ul id="list"></ul>
+  <p id="empty" hidden>清單是空的。</p>
+
+  <form id="add-form">
+    <input id="add-input" type="text" placeholder="例如 app.example.com" autocomplete="off">
+    <button type="submit">新增</button>
+  </form>
+  <button id="add-current" type="button">加入目前網站</button>
+
+  <p id="msg" role="status"></p>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Prod Guard",
+  "version": "0.1.0",
+  "description": "在正式環境網域上，每次切回分頁都蓋一層遮罩，避免把正式和測試搞混。",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "optional_host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Prod Guard",
+    "default_popup": "popup.html"
+  }
+}
